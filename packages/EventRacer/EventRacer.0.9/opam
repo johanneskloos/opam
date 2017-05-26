@@ -1,0 +1,15 @@
+opam-version: "1.2"
+maintainer: "Johannes Kloos <jkloos@mpi-sws.org>"
+authors: "Johannes Kloos <jkloos@mpi-sws.org>"
+homepage: "https://github.com/johanneskloos/EventRacer-ocaml"
+bug-reports: "https://github.com/johanneskloos/EventRacer-ocaml/issues"
+license: "Apache"
+dev-repo: "http://github.com/johanneskloos/EventRacer-ocaml.git"
+build: [make]
+install: [make "reinstall"]
+remove: ["ocamlfind" "remove" "EventRacer"]
+depends: [
+  "ocamlfind" {build}
+  "fmt"
+  "ocamlgraph"
+]
