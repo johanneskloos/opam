@@ -1,0 +1,11 @@
+Interface to EventRacer.
+
+The EventRacer project provides instrumented browsers that output event
+traces of their operation. These traces are extremely useful for building
+dynamic analyses of JavaScript and web pages; for instance, EventRacer
+itself provides a race detection tool.
+
+The file format used by EventRacer is a custom binary format (the action log),
+for which they provide a C++ API. This project wraps the C++ API to provide
+an OCaml API for these files. Additionally, we also wrap the race analysis
+itself.
